@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7c3e45aa84.js" crossorigin="anonymous"></script>
+   
+
+</head>
+<body>
+<div id="header">
+   <div class="container">
+     <nav>
+        <img src="imAge/logo.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#education">EDUCATION</a></li>
+            <li><a href="#skills-projects">SKILLS-PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+     </nav>
+     <div class="header-text">
+        <p>Mechanical Engineering Undergraduate |<br> CAD Enthusiast</p>
+        <h1>Hi, I'm <span>Sanjanaa.M</span> <br>from NITK</h1> 
+     </div>
+   </div> 
+</div>
+<!---------------------ABOUT-------------------->
+<div id="about">
+   <div class="container">
+      <div class="row">
+         <div class="about-col-1">
+              <img src="image/user.png">
+         </div> 
+         <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>Hi, I'm Sanjanaa M, a Mechanical Engineering undergraduate at the National Institute of Technology Karnataka (NITK).
+                I am passionate about engineering design, innovation, and problem-solving.I enjoy exploring modern engineering tools
+                 and technologies, particularly CAD software and product design, which allow me to transform ideas into functional models. 
+                 
+            </p>
+
+            <div class="tabs">
+               <p class="tab-links active-link" onclick="opentab('experience')">EXPERIENCE</p>
+               <p class="tab-links" onclick="opentab('extra-curricular')">EXTRA-CURRICULAR</p>
+
+            </div>
+            <div class="tab-contents active-tab" id="experience">
+               <ul>
+                  <li><span>2025-PRESENT</span><br>
+                  Pursuing a Bachelor's degree in Mechanical Engineering<br>
+                   with a focus on design and manufacturing.</li>
+                  <li><span>CAD</span><br>
+                  Learning CAD modeling and assembly design using Fusion 360.</li>
+               </ul>
+            </div>
+            <div class="tab-contents " id="extra-curricular">
+               <ul>
+                  <li><span>Photography</span></li>
+                  <li><span>Drawing</span></li>
+                  <li><span>Sports</span></li>
+                  <li><span>Technical Club Activities</span></li>
+               </ul>
+            </div>
+         </div>    
+      </div>      
+   </div>
+</div>
+<!---------------education---------------->
+<div id="education">
+   <div class="container">
+      <h1 class="sub-title">Education</h1>
+      <div class="education-list">
+         <div>
+            <i class="fa-solid fa-school"></i>
+            <h2>Higher Secondary Education</h2>
+            <p>Completed schooling with 94.6% in Board Examinations.<br>
+               Achieved 90.7 percentile, securing admission to NITK 
+               Surathkal.</p>
+            <a href="#">learn more</a>
+         </div>
+         <div>
+            <i class="fa-solid fa-book"></i>
+            <h2>2024-2025</h2>
+            <p>Took a dedicated year to prepare for JEE,<br> strengthening problem-solving,
+                analytical thinking, <br>and self-discipline.</p>
+            <a href="#">learn more</a>
+         </div>
+         <div>
+            <i class="fa-solid fa-building-columns"></i>
+            <h2>2025-present</h2>
+            <p>Bachelor of Technology (B.Tech) in Mechanical Engineering<br>
+               National Institute of Technology Karnataka</p>
+            <a href="#">learn more</a>
+         </div>
+      </div>
+   </div>
+</div>
+<!----------------skills-projects---------------->
+<div id="skills-projects">
+   <div class="container">
+      <h1 class="sub-title">Skills-Projects</h1> 
+      <div class="work-list">
+         <div class="work">
+            <img src="image/img1.png"> 
+            <div class="layer">
+               <h3>CAD DESIGN</h3>
+               <P>CAD Modeling (Fusion 360),3D Design & Assembly,<BR>
+                  Engineering Drawing,Solid Modeling,Product Design</P>
+            </div>
+         </div>
+         <div class="work">
+            <img src="image/img2.png"> 
+            <div class="layer">
+               <h3>CODING</h3>
+               <P> python , C++,HTML, CSS, JavaScript,<BR>
+               Basic Web Development,MS Office<BR>
+                   (Word, Excel, PowerPoint),</P>
+            </div>
+         </div>
+         <div class="work">
+            <img src="image/img3.png"> 
+            <div class="layer">
+               <h3>PROJECTS</h3>
+               <P>Planetary Gear Train Assembly (Fusion 360)<br>
+                  Mechanical Component Modeling <br>
+                 Tic-Tac-Toe Web Application,Personal Portfolio Website(HTML,CSS,JAVA) <br>
+                  library management system (python)
+               </P>
+            </div>
+         </div>
+      </div> 
+      <a href="#" class="btn">see more</a>
+   </div>
+</div>
+<!------------------------- contact------------------->
+<div id="contact">
+   <div class="container">
+      <div class="row">
+         <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>sanjanaasanjanaa123@gmail.com</p>
+            <p><i class="fa-brands fa-github"></i>https://github.com/sanjanaa260207</p>
+            <p><i class="fa-brands fa-linkedin"></i>https://www.linkedin.com/in/Sanjanaa.M</div>/</p>
+            
+            
+         </div>
+         <div class="contact-right">
+            <form>
+               <input type="text" name="name" placeholder="Your Name" required>
+               <input type="email" name="email" placeholder="Your Email" required>
+               <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+               <button type="submit" class="btn btn2">Submit</button>
+            </form>
+         </div>
+      </div>
+   </div>
+   <div class="copyright">
+      <p><i class="fa-solid fa-copyright"></i>2026 Sanjanaa .Built with HTML,CSS,JAVASCRIPT.</p>
+   </div>
+
+</div>
+
+<script>
+   var tablinks = document.getElementsByClassName("tab-links");
+   var tabcontents = document.getElementsByClassName("tab-contents");
+
+   function opentab(tabname){
+      for(tablink of tablinks){
+         tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+         tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+   }
+</script>
+<script>
+   var sidemenu = document.getElementById("sidemenu"); 
+
+   function openmenu(){
+      sidemenu.style.right = "0";
+   }
+   function closemenu(){
+      sidemenu.style.right = "-200px";   
+   }
+</script>
+</body>
+</html>
